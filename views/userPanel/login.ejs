@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if (alreadyLoggedIn) { 
+                alert('User is already logged in');
+            }
+        });
+    </script>
+</head>
+<body class="font-sans flex items-center justify-center min-h-screen">
+    <div class="flex w-full h-screen">
+        <!-- Left section with the background image -->
+        <div class="w-1/2 bg-cover bg-center" style="background-image: url('/images/shoe_cartoon.jpg');">
+            <!-- Add any additional content here if needed -->
+        </div>
+        <!-- Right section with the login form -->
+        <div class="w-1/2 flex items-center justify-center bg-white">
+            <div class="p-6 rounded-lg shadow-lg w-80">
+                <h2 class="text-2xl font-bold mb-4 text-center">Login</h2>
+                <form action="/login" method="POST" class="text-left">
+                    <div class="mb-4">
+                        <label for="email" class="block mb-2">Email:</label>
+                        <input type="email" id="email" name="email" required class="w-full p-2 border border-gray-300 rounded-lg">
+                    </div>
+                    <div class="mb-4">
+                        <label for="password" class="block mb-2">Password:</label>
+                        <input type="password" id="password" name="password" required class="w-full p-2 border border-gray-300 rounded-lg">
+                    </div>
+                    <button type="submit" class="w-full py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700">Login</button>
+                </form>
+                <p class="mt-4 text-center">Don't have an account? <a href="/signup" class="text-blue-500 hover:underline">Sign Up</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

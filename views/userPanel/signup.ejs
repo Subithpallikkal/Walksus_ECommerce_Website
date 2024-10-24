@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="font-sans bg-cover bg-center flex flex-col items-center justify-center min-h-screen" style="background-image: url('/images/login1.jpg'); backdrop-filter: blur(2px)">
+    <header class="w-full flex justify-between items-center bg-gray-200 py-2 px-5 fixed top-0 left-0 right-0 z-50">
+        <nav class="flex items-center">
+            <h4 class="text-lg font-semibold">Walksus</h4>
+        </nav>
+        <div class="flex space-x-4">
+            <a href="/home" class="text-blue-500 hover:underline">Home</a>
+            <a href="/signup" class="text-blue-500 hover:underline">Signup</a>
+        </div>
+    </header>
+    <div class="bg-white bg-opacity-80 backdrop-blur-md p-4 rounded-lg shadow-lg w-80 mt-20 text-center">
+        <h2 class="text-2xl font-bold mb-4">Sign Up</h2>
+        <form action="/signup" method="POST" class="text-left">
+            <div class="mb-4">
+                <label for="username" class="block mb-2">Username:</label>
+                <input type="text" id="username" name="username" required class="w-full p-2 border border-gray-300 rounded-lg">
+            </div>
+            <div class="mb-4">
+                <label for="email" class="block mb-2">Email:</label>
+                <input type="email" id="email" name="email" required class="w-full p-2 border border-gray-300 rounded-lg">
+            </div>
+            <div class="mb-4">
+                <label for="password" class="block mb-2">Password:</label>
+                <input type="password" id="password" name="password" required class="w-full p-2 border border-gray-300 rounded-lg">
+            </div>
+            <div class="mb-4">
+                <label for="confirmPassword" class="block mb-2">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="cpassword" required class="w-full p-2 border border-gray-300 rounded-lg">
+            </div>
+            <div class="mb-4">
+                <label for="confirmOTP" class="block mb-2">OTP:</label>
+                <input type="number" id="otp" name="otp" required class="w-full p-2 border border-gray-300 rounded-lg">
+            </div>
+            <button type="submit" class="w-full py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700">Sign Up</button>
+        </form>
+        <p class="mt-4">Already have an account? <a href="/login" class="text-blue-500 hover:underline">Login</a></p>
+    </div>
+</body>
+</html>

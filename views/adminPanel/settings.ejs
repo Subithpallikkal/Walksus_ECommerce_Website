@@ -1,0 +1,19 @@
+<% include('layout.ejs') %>
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2">Settings</h1>
+</div>
+<form>
+    <div class="form-group">
+        <label for="siteTitle">Site Title</label>
+        <input type="text" class="form-control" id="siteTitle" placeholder="Enter site title">
+    </div>
+    <div class="form-group">
+        <label for="adminEmail">Admin Email</label>
+        <input type="email" class="form-control" id="adminEmail" placeholder="Enter admin email">
+    </div>
+    <div class="form-group">
+        <label for="password">Change Password</label>
+        <input type="password" class="form-control" id="password" placeholder="Enter new password">
+    </div>
+    <button type="submit" class="btn btn-primary">Save Changes</button>
+</form>
